@@ -16,6 +16,9 @@ export class RequestManager {
           return config
         }
       }
+      if (config.url?.startsWith("/.well-known")) {
+        return config
+      }
 
       try {
         const tokenSet = await this.client.refreshGrant()
