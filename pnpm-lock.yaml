@@ -5298,6 +5298,7 @@ packages:
     resolution: {tarball: https://codeload.github.com/aDedel/keycloak-admin-client-cjs/tar.gz/35590b5f4cea17097e99001ba29eee8b9aa14da0}
     name: '@dedel.alex/keycloak-admin-client-cjs'
     version: 24.0.2
+    prepare: true
     requiresBuild: true
     dependencies:
       '@keycloak/keycloak-admin-client': 24.0.2
