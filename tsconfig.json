@@ -12,8 +12,7 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-    "module": "CommonJS",
-    "target": "ES6"
+    "module": "CommonJS"
   },
   "include": [
     "src"

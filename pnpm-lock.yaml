@@ -8,9 +8,6 @@ dependencies:
   '@dedel.alex/keycloak-admin-client-cjs':
     specifier: https://github.com/aDedel/keycloak-admin-client-cjs
     version: github.com/aDedel/keycloak-admin-client-cjs/35590b5f4cea17097e99001ba29eee8b9aa14da0
-  '@keycloak/keycloak-admin-client':
-    specifier: ^24.0.2
-    version: 24.0.2
   '@nestjs/graphql':
     specifier: ^10.0.21
     version: 10.2.1(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(graphql@16.8.1)(reflect-metadata@0.1.14)(ts-morph@15.1.0)
@@ -5305,6 +5302,7 @@ packages:
     resolution: {tarball: https://codeload.github.com/aDedel/keycloak-admin-client-cjs/tar.gz/35590b5f4cea17097e99001ba29eee8b9aa14da0}
     name: '@dedel.alex/keycloak-admin-client-cjs'
     version: 24.0.2
+    prepare: true
     requiresBuild: true
     dependencies:
       '@keycloak/keycloak-admin-client': 24.0.2

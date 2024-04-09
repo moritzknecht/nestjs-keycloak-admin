@@ -16,7 +16,7 @@
     "style:check": "eslint src --ext .js,.ts",
     "style": "eslint src --ext .js,.ts --fix",
     "start:dev": "tsc -w",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json --module commonjs  --target ES2017 --outDir dist",
     "prepare": "npm run build",
     "release": "semantic-release"
   },
@@ -40,7 +40,6 @@
   },
   "dependencies": {
     "@dedel.alex/keycloak-admin-client-cjs": "https://github.com/aDedel/keycloak-admin-client-cjs",
-    "@keycloak/keycloak-admin-client": "^24.0.2",
     "@nestjs/graphql": "^10.0.21",
     "axios": "^0.27.2",
     "graphql": "^16.6.0",
