@@ -12,8 +12,8 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "target": "ESNext"
+    "module": "CommonJS",
+    "target": "ES6"
   },
   "include": [
     "src"

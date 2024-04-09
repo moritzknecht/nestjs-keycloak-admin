@@ -1,5 +1,4 @@
-import { Logger, Global } from '@nestjs/common'
-import AdminClient from '@keycloak/keycloak-admin-client'
+import { KeycloakAdminClient as AdminClient } from '@dedel.alex/keycloak-admin-client-cjs';
 import { Client, Issuer, TokenSet } from 'openid-client'
 import { resolve } from 'url'
 import { ResourceManager } from './lib/resource-manager'
@@ -8,6 +7,7 @@ import { KeycloakModuleOptions } from './@types/package'
 import KeycloakConnect, { Keycloak } from 'keycloak-connect'
 import { RequestManager } from './lib/request-manager'
 import { UMAConfiguration } from './@types/uma'
+import { Global, Logger } from '@nestjs/common';
 
 @Global()
 export class KeycloakService {
