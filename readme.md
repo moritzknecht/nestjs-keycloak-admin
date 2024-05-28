@@ -6,11 +6,7 @@ Install using `npm i --save nestjs-keycloak-admin` or `pnpm add nestjs-keycloak-
 
 ## ESM restriction
 
-- Due to `@keycloak/keycloak-admin-client` package, `nestjs-keycloak-admin` can't support CommonJS at the moment. 
-The team behind `keycloak-admin-client` made the decision to have a breaking change and support CommonJS.
-Please refer to [this Github issue](https://github.com/keycloak/keycloak-nodejs-admin-client/issues/523) for more information about their decision-making process.
-- You need to switch to ESM to run this package without any issues. Please refer to [this Github gist](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c)
-for more information.
+I removed the ESM restriction, works with CommonJS
 
 ## Initialize KeycloakModule
 
